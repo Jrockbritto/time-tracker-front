@@ -6,6 +6,7 @@ export interface IFetchTimes {
 
 export interface ITimesPage {
   user: IUser;
+  setUser: any;
 }
 
 export interface ITimeDuration {

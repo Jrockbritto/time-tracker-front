@@ -4,9 +4,17 @@ import { useForm } from "react-hook-form";
 import './Login.css'
 import { ILoginPage, IOnSubmitForm } from "./types/loginForm.types";
 import { login } from "../../api/login";
+import { useEffect } from "react";
 
 function Login(props: ILoginPage) {
   const { setUser } = props;
+
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+    if (user) {
+      setUser(JSON.parse(user))
+    }
+  })
 
   const {
     register,

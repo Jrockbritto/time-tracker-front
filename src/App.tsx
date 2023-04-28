@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='wrapper'>
       <div className="body-wrapper">
-        {user ? <Times user={user} /> : <Login setUser={setUser} />}
+        {user ? <Times user={user} setUser={setUser} /> : <Login setUser={setUser} />}
       </div>
     </div>
   );

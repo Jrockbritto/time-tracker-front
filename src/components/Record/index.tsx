@@ -2,10 +2,9 @@ import { IRecord } from '../../pages/Times/types/time.types';
 import './Record.css';
 
 function Records(props: IRecord) {
-  const { time, setSelected, selected } = props;
+  const { time, setSelected } = props;
 
   const handleOnClick = () => {
-    console.log('Selected', selected);
     setSelected(time)
   };
 

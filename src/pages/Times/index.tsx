@@ -10,7 +10,7 @@ import Accordion from "../../components/Accordion";
 function Times(props: ITimesPage) {
   let today: ITime | undefined;
   const todayDate = format(new Date(), 'dd/MM/yyyy');
-  const { user } = props;
+  const { user, setUser } = props;
 
   const [list, setList] = useState<ITime[]>([]);
   const [selected, setSelected] = useState<ITime | undefined>(today);
@@ -19,6 +19,7 @@ function Times(props: ITimesPage) {
 
   const onSubmit = async (payload: IFetchTimes) => {
     const data = await times({ id: user.id });
+    console.log('data',data);
     today = data.find((time: ITime) => time.date === todayDate);
     setSelected(today) 
     setList(data);
@@ -32,6 +33,10 @@ function Times(props: ITimesPage) {
   useEffect(() => {
     onSubmit({ id: user.id })
     setRefresh(false)
+    const userStored = localStorage.getItem("user");
+    if (!userStored) {
+      setUser()
+    }
   }, [user, refresh])
 
   const renderRecords = () =>

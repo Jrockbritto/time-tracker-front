@@ -21,7 +21,12 @@ const api = axios.create({
 */
 api.interceptors.response.use(
   (response) => response,
-  (error) => Promise.reject(error.response.data.err)
+  (error) => {
+    if (error.response.status === 401) {
+      localStorage.removeItem("user");
+    }
+    Promise.reject(error.response.data.err);
+  }
 );
 
 export default api;
