@@ -1,9 +1,9 @@
 import { IAccordion } from './types/accordion.types';
 import './Accordion.css';
+import { removeTimezoneOffset } from '../../utils/timezone.function';
 
 function Accordion (props: IAccordion) {
   const handleOnClick = (e: any) => {
-    e.preventDefault();
     const panel = e.target.nextElementSibling;
     panel.classList.toggle('active');
     panel.style.maxHeight = panel.scrollHeight + "px"
@@ -12,9 +12,9 @@ function Accordion (props: IAccordion) {
   const { timeArray = [] } = props;
 
   const renderData = () => timeArray
-  .map((time, index) => <p className='a-font t-color t-font'>
+  .map((time, index) => <p key={index} className='a-font t-color t-font'>
       {!(index % 2) ? "Entrada: " : "Saída: "}
-      {new Date(time).toLocaleString('pt-BR')}
+      {removeTimezoneOffset(new Date(time)).toString()}
     </p>)
 
   return (

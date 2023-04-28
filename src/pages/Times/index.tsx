@@ -36,7 +36,7 @@ function Times(props: ITimesPage) {
 
   const renderRecords = () =>
     list.filter((record) => record.date !== selected?.date).map((time) => {
-      return(<Record selected={selected} setSelected={setSelected} time={time}/>)
+      return(<Record key={time.date} selected={selected} setSelected={setSelected} time={time}/>)
     })
 
   return(

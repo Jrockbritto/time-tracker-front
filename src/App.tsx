@@ -7,8 +7,10 @@ function App() {
  const [user, setUser] = useState();
 
   return (
-    <div className="body-wrapper">
-      {user ? <Times user={user} /> : <Login setUser={setUser} />}
+    <div className='wrapper'>
+      <div className="body-wrapper">
+        {user ? <Times user={user} /> : <Login setUser={setUser} />}
+      </div>
     </div>
   );
 }

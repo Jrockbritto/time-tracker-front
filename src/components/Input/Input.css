@@ -1,6 +1,5 @@
 .i-wrapper > input {
-  max-width: 351px;
-  width: 100%;
+  width: 96%;
   font-weight: 600;
   font-size: 21.6px;
   padding: 26px 0 8px 14px;
@@ -11,7 +10,6 @@
 
 .i-wrapper {
   position: relative;
-  max-width: 365px;
 }
 
 .form-control-label {

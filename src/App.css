@@ -8,10 +8,25 @@ body {
   font-family: 'Montserrat';
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .body-wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  max-width: 365px;
+  min-width: 365px;
+}
+
+@media screen and (max-width: 768px) {
+  .body-wrapper {
+    max-width: 265px;
+    min-width: 265px;
+  }
 }
