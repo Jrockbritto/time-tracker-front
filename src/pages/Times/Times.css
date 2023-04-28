@@ -63,6 +63,12 @@
   width: 100%;
 }
 
+.t-records-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
 /* RECORDS */
 
 .t-button-wrapper {

@@ -19,7 +19,6 @@ function Times(props: ITimesPage) {
 
   const onSubmit = async (payload: IFetchTimes) => {
     const data = await times({ id: user.id });
-    console.log('data',data);
     today = data.find((time: ITime) => time.date === todayDate);
     setSelected(today) 
     setList(data);
@@ -27,7 +26,7 @@ function Times(props: ITimesPage) {
 
   const handleOnClick = async () => {
     await timeRegister();
-    setRefresh(true)
+    setRefresh(true);
   };
   
   useEffect(() => {
@@ -80,7 +79,7 @@ function Times(props: ITimesPage) {
       <Accordion timeArray={selected?.timeArray} />
       <div className="t-days-wrapper a-font f-color">
         <p className="t-font t-fw-700">Dias anteriores</p>
-        <div>
+        <div className="t-records-wrapper">
           {renderRecords()}
         </div>
       </div>
