@@ -1,0 +1,89 @@
+.t-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 85px;
+  align-items: center;
+  max-width: 365px;
+  min-width: 365px;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+/* HEADER */
+
+.t-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.t-header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.time-text-wrapper > p {
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+
+/* DURATION */
+
+.d-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.t-info-wrapper > p {
+  padding: 0;
+  margin: 0;
+}
+
+.t-journey-wrapper > p {
+  padding: 0;
+  margin: 0;
+}
+
+.t-font-duration {
+  font-size: 23.2px;
+  line-height: 28px;
+}
+
+/* DURATION */
+
+/* RECORDS / DAYS */
+
+.t-days-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+
+/* RECORDS */
+
+.t-font {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+
+.t-fw-700 {
+  font-weight: 700;
+}
+
+.t-color {
+  color: rgba(207, 207, 207, 0.69);
+}
+
+.t-fw-300 {
+  font-weight: 300;
+}
+
+.t-ta-right {
+  text-align: right;
+}

@@ -1,0 +1,37 @@
+.i-wrapper > input {
+  max-width: 351px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 21.6px;
+  padding: 26px 0 8px 14px;
+  background: #1E2733;
+  border-radius: 4px;
+  border: none;
+}
+
+.i-wrapper {
+  position: relative;
+  max-width: 365px;
+}
+
+.form-control-label {
+  position: absolute;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  top: 7px;
+  left: 17px;
+}
+
+.a-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.f-color {
+  color:#FFFFFF;
+}

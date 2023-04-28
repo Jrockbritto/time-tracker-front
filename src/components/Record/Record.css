@@ -1,0 +1,26 @@
+.r-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(217, 217, 217, 0.05);
+  border-radius: 4px;
+}
+
+.r-wrapper:hover {
+  background: rgba(217, 217, 217, 0.47);
+}
+
+.r-wrapper > p {
+  margin: 0;
+}
+
+.r-date {
+  padding: 13px;
+  font-weight: 500;
+  color: #CFCFCF;
+}
+
+.r-duration {
+  padding: 13px;
+  font-weight: 700;
+}

@@ -1,0 +1,32 @@
+.accordion {
+  background-color: rgba(217, 217, 217, 0.05);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 4px 4px 0px 0px ;
+}
+
+.panel {
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  border-radius: 0px 0px 4px 4px ;
+  padding: 10px 0px;
+}
+
+.panel > p {
+  margin:  0;
+  padding-left: 10px;
+}
+
+.active, .accordion:hover {
+  background-color: rgba(217, 217, 217, 0.126);;
+  display: block;
+  transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
