@@ -61,7 +61,7 @@ function Times(props: ITimesPage) {
           <p className="t-font t-fw-700">Jornada {selected?.journey}</p>
         </div>
       </div>
-      <>
+      <div className="t-button-wrapper">
         {selected?.firstOfJourney !== undefined ? 
           <Button
             text={selected?.firstOfJourney ?
@@ -71,7 +71,7 @@ function Times(props: ITimesPage) {
             onClick={handleOnClick}/> :
           null
         }
-      </>
+      </div>
       <Accordion timeArray={selected?.timeArray} />
       <div className="t-days-wrapper a-font f-color">
         <p className="t-font t-fw-700">Dias anteriores</p>
