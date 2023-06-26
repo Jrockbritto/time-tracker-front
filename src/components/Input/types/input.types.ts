@@ -1,6 +1,7 @@
 export interface IInputProps {
   label: string;
   type?: string;
+  value?: string;
   errors: any;
   validations?: IInputValidations;
   register: any;

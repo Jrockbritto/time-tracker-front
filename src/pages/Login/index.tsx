@@ -34,8 +34,8 @@ function Login(props: ILoginPage) {
       <form id="c-form" className="c-form" onSubmit={handleSubmit((data: any) => onSubmit({email: data.Email, password: data.Senha}))} autoComplete="off">
         <div className='t-text-wrapper a-font'><p>Ponto <span className='p-span'>Ilumeo</span></p></div>
         <div className='a-input-wrapper'>
-          <Input errors={errors} register={register} label='Email' />
-          <Input errors={errors} register={register} type='password' label='Senha' />
+          <Input errors={errors} register={register} value='johndoe@gmail.com' label='Email' />
+          <Input errors={errors} register={register} value='Teste1234@'  type='password' label='Senha' />
         </div>
         <Button type='submit' text='Confirmar' />
       </form>
